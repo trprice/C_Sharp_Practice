@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Module1_Assignment
 {
-    class Student : Person
+    class Teacher : Person
     {
-        
     }
 }
