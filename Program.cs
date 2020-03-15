@@ -6,7 +6,8 @@ namespace Module1_Assignment
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            String name = "Bob Barker";
+            Console.WriteLine("Name: {0}", name);
         }
     }
 }

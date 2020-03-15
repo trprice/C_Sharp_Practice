@@ -10,5 +10,7 @@ namespace Module1_Assignment
         String LastName;
         DateTime Birthday;
         StreetAddress Address;
+
+        public Person() { }
     }
 }
