@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Module1_Assignment
 {
     public class UProgram
@@ -24,15 +26,27 @@ namespace Module1_Assignment
             }
         }
 
-        Degree[] _degrees;
+        List<Degree> _degrees;
 
-        public Degree[] Degrees
+        public List<Degree> Degrees
         {
             get { return _degrees; }
 
             // It makes sense to make this property read only and use AddDegree and RemoveDegree to handle array management
         }
 
+        public void AddDegree (Degree degree)
+        {
+            _degrees.Add(degree);
+        }
 
+        // TODO: Add RemoveDegree()
+
+        public UProgram(string programName, Person departmentHead)
+        {
+            _program_name = programName;
+            _department_head = departmentHead;
+            _degrees.Clear();
+        }
     }
 }
