@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Module1_Assignment
 {
-    class Teacher : Person
+    public class Teacher : Person
     {
     }
 }
