@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Module1_Assignment
 {
-    class Person
+    public class Person
     {
         string _first_name;
         public string FirstName
