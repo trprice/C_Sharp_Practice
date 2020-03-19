@@ -35,8 +35,20 @@ namespace Module1_Assignment
             }
         }
 
-        StreetAddress Address;
+        StreetAddress _address;
 
-        public Person() { }
+        public StreetAddress Address
+        {
+            get { return _address; }
+            set { if (value != null) _address = value; }
+        }
+
+        public Person(string firstName, string lastName, DateTime birthday, StreetAddress address)
+        {
+            _first_name = firstName;
+            _last_name = lastName;
+            _birthday = birthday;
+            _address = address;
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace Module1_Assignment
         {
             _program_name = programName;
             _department_head = departmentHead;
-            _degrees.Clear();
+            _degrees = new List<Degree>();
         }
     }
 }
