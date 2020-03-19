@@ -19,10 +19,19 @@ namespace Module1_Assignment
             set { _units_required = value; }
         }
 
-        public Degree(string degreeName, ushort unitsRequired)
+        CourseInformation _course;
+
+        public CourseInformation Course
+        {
+            get { return _course; }
+            set { if (value != null) _course = value; }
+        }
+
+        public Degree(string degreeName, ushort unitsRequired, CourseInformation course)
         {
             _degree_name = degreeName;
             _units_required = unitsRequired;
+            _course = course;
         }
 
         public override string ToString()

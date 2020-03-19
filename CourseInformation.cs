@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Module1_Assignment
 {
     public class CourseInformation
@@ -35,12 +37,31 @@ namespace Module1_Assignment
             set { if (value != null) _course_teacher = value; }
         }
 
+        List<Student> _students;
+
+        public List<Student> Students
+        {
+            get { return _students; }
+        }
+
+        public void AddStudent(Student student)
+        {
+            if (student != null)
+                _students.Add(student);
+        }
+
         public CourseInformation(string courseName, ushort credits, ushort duration, Teacher teacher)
         {
             _course_name = courseName;
             _credits = credits;
             _duration_in_weeks = duration;
             _course_teacher = teacher;
+            _students = new List<Student>();
+        }
+
+        public override string ToString()
+        {
+            return _course_name;
         }
     }
 }
