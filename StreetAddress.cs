@@ -52,12 +52,27 @@ namespace Module1_Assignment
             set { if (value != null) _country = value; }
         }
 
-        public void SetAddress(String Address_FirstLine,
-                               String Address_SecondLine,
-                               String City,
-                               String State,
-                               String ZipCode,
-                               String Country)
+        public void SetAddress(string Address_FirstLine,
+                               string Address_SecondLine,
+                               string City,
+                               string State,
+                               string ZipCode,
+                               string Country)
+        {
+            _address_first_line = Address_FirstLine;
+            _address_second_line = Address_SecondLine;
+            _city = City;
+            _state = State;
+            _zip_code = ZipCode;
+            _country = Country;
+        }
+
+        public StreetAddress(string Address_FirstLine,
+                               string Address_SecondLine,
+                               string City,
+                               string State,
+                               string ZipCode,
+                               string Country)
         {
             _address_first_line = Address_FirstLine;
             _address_second_line = Address_SecondLine;

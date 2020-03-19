@@ -24,5 +24,10 @@ namespace Module1_Assignment
             _degree_name = degreeName;
             _units_required = unitsRequired;
         }
+
+        public override string ToString()
+        {
+            return _degree_name + " (Units Required: " + _units_required + ")";
+        }
     }
 }
